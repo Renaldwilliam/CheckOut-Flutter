@@ -230,7 +230,7 @@ class _PageCheckOutState extends State<PageCheckOut> {
                     style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(14)),
-                        primary: Color(0xff27E03A),
+                        backgroundColor: Color(0xff27E03A),
                         padding: EdgeInsets.all(15)),
                     child: Text(
                       'Confirmar Pagamento',

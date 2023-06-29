@@ -283,7 +283,7 @@ class _PageItemState extends State<PageItem> {
                       Expanded(
                           child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  primary: Color(0xff27E03A),
+                                  backgroundColor: Color(0xff27E03A),
                                   padding: EdgeInsets.all(15),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(15))),

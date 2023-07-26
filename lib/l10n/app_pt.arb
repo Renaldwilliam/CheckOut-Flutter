@@ -1,0 +1,28 @@
+{
+    "nomeProduto": "Nike Lebron Witness V Off White",
+    "tamanhos": "Tamanhos disponíveis",  
+    "descricao": "Descrição",
+    "textoDescricao": "Inspire-se no astro Lebron James e entre em quadra para vencer com o Tênis Nike Witness V ....",
+    "comprar": "Comprar",
+    "voltarCarrinho": "Voltar para o  Carrinho",
+    "subTotal": "Subtotal",
+    "desconto": "Desconto",
+    "total": "Total",
+    "selecionePagamento": "Selecione o método de pagamento",
+    "outrasFormasDepamento": "Outras formas de pagamento",
+    "confirmarPagamento": "Confirmar Pagamento",
+    "numberOfDataPoints": "{value}",
+    "@numberOfDataPoints": {
+        "description": "A message with a formatted int parameter",
+        "placeholders": {
+            "value": {
+                "type": "int",
+                "format": "simpleCurrency",
+                "optionalParameters": {
+                    "decimalDigits": 2
+                }
+            }
+        }
+    }
+    
+}

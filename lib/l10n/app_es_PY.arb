@@ -1,0 +1,27 @@
+{
+  "nomeProduto": "Nike Paraguai Lebron Witness V Off White",
+  "tamanhos": "Available sizes",
+  "descricao": "Description",
+  "textoDescricao": "Get inspired by superstar Lebron James and hit the court to win in the Nike Witness V Shoe...",
+  "comprar": "Purchase",
+  "voltarCarrinho": "Back to Cart",
+  "subTotal": "Subtotal",
+  "desconto": "discount",
+  "total": "Total",
+  "selecionePagamento": "Select the payment method",
+  "outrasFormasDepamento": "Other forms of payment",
+  "confirmarPagamento": "Confirm Payment",
+  "numberOfDataPoints": "{value}",
+  "@numberOfDataPoints": {
+    "description": "A message with a formatted int parameter",
+    "placeholders": {
+        "value": {
+            "type": "int",
+            "format": "simpleCurrency",
+            "optionalParameters": {
+                "decimalDigits": 2
+                }
+            }
+        }
+    }
+}

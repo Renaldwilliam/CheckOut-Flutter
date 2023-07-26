@@ -1,5 +1,7 @@
 import 'package:creckout/pages/page_checkout.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:intl/intl.dart';
 
 class PageItem extends StatefulWidget {
   const PageItem({Key? key}) : super(key: key);
@@ -14,7 +16,7 @@ class _PageItemState extends State<PageItem> {
   bool tamanho3 = false;
   bool tamanho4 = false;
   bool curtir = false;
-
+  var number = 123456.78;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -69,7 +71,7 @@ class _PageItemState extends State<PageItem> {
                       children: [
                         Expanded(
                           child: Text(
-                            'Nike Lebron Witness V Off White',
+                            AppLocalizations.of(context)!.nomeProduto,
                             style: TextStyle(
                                 color: Colors.black,
                                 fontSize: 25,
@@ -79,12 +81,13 @@ class _PageItemState extends State<PageItem> {
                         SizedBox(width: 10),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text.rich(
                               TextSpan(
                                 children: <TextSpan>[
                                   TextSpan(
-                                    text: 'R\$500',
+                                    text: AppLocalizations.of(context)!
+                                        .numberOfDataPoints(500),
                                     style: TextStyle(
                                       fontSize: 16,
                                       color: Color(0xffF28E18),
@@ -95,7 +98,8 @@ class _PageItemState extends State<PageItem> {
                               ),
                             ),
                             Text(
-                              'R\$ 350',
+                              AppLocalizations.of(context)!
+                                  .numberOfDataPoints(350),
                               style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 25,
@@ -108,7 +112,7 @@ class _PageItemState extends State<PageItem> {
                   ),
                   SizedBox(height: 18),
                   Text(
-                    "Tamanhos disponíveis",
+                    AppLocalizations.of(context)!.tamanhos,
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
                   ),
                   SizedBox(height: 18),
@@ -242,12 +246,12 @@ class _PageItemState extends State<PageItem> {
                   ),
                   SizedBox(height: 18),
                   Text(
-                    'Descrição',
+                    AppLocalizations.of(context)!.descricao,
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
                   ),
                   SizedBox(height: 18),
                   Text(
-                    "Inspire-se no astro Lebron James e entre em quadra para vencer com o Tênis Nike Witness V ....",
+                    AppLocalizations.of(context)!.textoDescricao,
                     style: TextStyle(fontSize: 18),
                   ),
                   SizedBox(height: 18),
@@ -296,7 +300,7 @@ class _PageItemState extends State<PageItem> {
                                 );
                               },
                               child: Text(
-                                "Comprar",
+                                AppLocalizations.of(context)!.comprar,
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.bold),
                               )))

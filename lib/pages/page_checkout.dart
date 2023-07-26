@@ -1,6 +1,7 @@
 import 'package:creckout/widgets/cartao_modelo.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class PageCheckOut extends StatefulWidget {
   const PageCheckOut({Key? key}) : super(key: key);
@@ -47,7 +48,7 @@ class _PageCheckOutState extends State<PageCheckOut> {
                 color: Colors.black,
               )),
           title: Text(
-            'Voltar para o  Carrinho',
+            AppLocalizations.of(context)!.voltarCarrinho,
             style: TextStyle(color: Colors.black),
           ),
         ),
@@ -73,12 +74,12 @@ class _PageCheckOutState extends State<PageCheckOut> {
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: const [
-                          Text('Nike Lebron Witness V\nOff White',
+                        children:  [
+                          Text(AppLocalizations.of(context)!.nomeProduto,
                               style: TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.bold)),
                           SizedBox(height: 8),
-                          Text('R\$ 350',
+                          Text(AppLocalizations.of(context)!.numberOfDataPoints(350),
                               style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold)),
                         ],
@@ -97,28 +98,12 @@ class _PageCheckOutState extends State<PageCheckOut> {
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Text('Subtotal:',
+                          children:  [
+                            Text(AppLocalizations.of(context)!.subTotal,
                                 style: TextStyle(
                                   fontSize: 18,
                                 )),
-                            Text('R\$ 350',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                )),
-                          ],
-                        ),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Text('Desconto:',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                )),
-                            Text('R\$ 0.00',
+                            Text(AppLocalizations.of(context)!.numberOfDataPoints(350),
                                 style: TextStyle(
                                   fontSize: 18,
                                 )),
@@ -129,11 +114,27 @@ class _PageCheckOutState extends State<PageCheckOut> {
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Text('Total:',
+                          children:  [
+                            Text(AppLocalizations.of(context)!.desconto,
+                                style: TextStyle(
+                                  fontSize: 18,
+                                )),
+                            Text(AppLocalizations.of(context)!.numberOfDataPoints(0),
+                                style: TextStyle(
+                                  fontSize: 18,
+                                )),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(AppLocalizations.of(context)!.total,
                                 style: TextStyle(
                                     fontSize: 18, fontWeight: FontWeight.bold)),
-                            Text('R\$ 350',
+                            Text(AppLocalizations.of(context)!.numberOfDataPoints(350),
                                 style: TextStyle(
                                     fontSize: 18, fontWeight: FontWeight.bold)),
                           ],
@@ -146,7 +147,7 @@ class _PageCheckOutState extends State<PageCheckOut> {
               Padding(
                 padding: const EdgeInsets.only(top: 18.0),
                 child: Text(
-                  'Selecione o método de pagamento',
+                  AppLocalizations.of(context)!.selecionePagamento,
                   style: TextStyle(fontSize: 20),
                 ),
               ),
@@ -179,7 +180,7 @@ class _PageCheckOutState extends State<PageCheckOut> {
               Padding(
                 padding: const EdgeInsets.only(top: 18.0),
                 child: Text(
-                  'Outras formas de pagamento',
+                  AppLocalizations.of(context)!.outrasFormasDepamento,
                   style: TextStyle(fontSize: 20),
                 ),
               ),
@@ -233,7 +234,7 @@ class _PageCheckOutState extends State<PageCheckOut> {
                         backgroundColor: Color(0xff27E03A),
                         padding: EdgeInsets.all(15)),
                     child: Text(
-                      'Confirmar Pagamento',
+                      AppLocalizations.of(context)!.confirmarPagamento,
                       style: TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
